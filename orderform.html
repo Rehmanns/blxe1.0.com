@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <header>
+        <h1>Order Page</h1>
+    </header>
+
+    <main>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <form action="connect.php" method="post">
+                <label for="color">Select T-shirt Color:</label>
+                <select id="color" name="color">
+                    <option value="color">Black</option>
+                    <option value="color">White</option>
+                    <!-- Add more options for other T-shirts -->
+                </select>
+
+                <label for="size">Select T-shirt Size:</label>
+                <select id="size" name="size">
+                    <option value="size">Small</option>
+                    <option value="size">Medium</option>
+                    <option value="size">Large</option>
+                    <option value="size">X-Large</option>
+                    <option value="size">XX-Large</option>
+                    <!-- Add more options for other T-shirts -->
+                </select>
+
+                
+               
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="phone" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <input type="submit" class="order-btn" value="Submit Order">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon"><img src="social media/facebook.webp" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="social media/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="social media/insta.png" alt="Instagram"></a>
+            <!-- Add more social media links/icons as needed -->
+        </div>
+        <p>&copy; 2023 T-shirt Catalog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
